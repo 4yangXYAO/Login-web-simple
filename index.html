@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UISocial - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/login/assets/style/style.css">
+</head>
+
+<body>
+    <!-- .container: Kotak utama (Main Wrapper) yang membagi halaman jadi 2 kolom (Kiri & Kanan) -->
+    <div class="container">
+
+        <!-- .branding-area: Area visual dengan gambar background space -->
+        <!-- Menggunakan justify-content: flex-end untuk memaksa konten turun ke bawah -->
+        <div class="branding-area">
+            <div class="overlay"></div> <!-- .overlay: Lapisan gelap agar teks putih mudah dibaca -->
+        </div>
+
+        <!-- .form-area: Area form login yang bersih (Clean white area) -->
+        <div class="form-area">
+            <header class="nav-bar">
+                <span class="logo-text">XyaoTicket</span>
+                <div class="lang-selector">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="EN">
+                    <span>EN</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </header>
+
+            <!-- .auth-wrapper: Membatasi lebar form agar tetap proporsional dan di tengah -->
+            <div class="auth-wrapper">
+                <div class="auth-header">
+                    <h1>HI TRAVELER</h1>
+                    <p>Welcome to XyaoTicket</p>
+                </div>
+
+                <form class="auth-form">
+                    <!-- .input-wrapper: Menggunakan position relative untuk teknik "Floating Label" CSS -->
+                    <div class="input-wrapper">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input type="password" id="password" placeholder=" " required>
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="#" class="text-link">Forgot password ?</a>
+                    </div>
+
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <!-- .btn-secondary: Tombol login pihak ketiga -->
+                    <button type="button" class="btn-secondary">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+                        Login with Google
+                    </button>
+
+                    <!-- .btn-primary: Tombol aksi utama dengan shadow warna merah -->
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+
+                <footer class="form-footer">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="/login/assets/script/script.js"></script>
+</body>
+
+</html>
